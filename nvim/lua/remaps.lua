@@ -55,6 +55,9 @@ nnoremap("<F3>", ":nohl<CR>")
 -- Run macros easily
 nnoremap("Q", "@q")
 
+-- Open netrw
+nnoremap("<C-e>", ":Lex<CR>:vertical resize 20<CR>")
+
 
 -- Move lines up/down
 inoremap("<A-j>", "<Esc>:m .+1<CR>==gi")
