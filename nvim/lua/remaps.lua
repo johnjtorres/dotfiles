@@ -43,16 +43,29 @@ nnoremap("<S-h>", "0")
 -- End of line
 nnoremap("<S-l>", "$")
 
+-- Show registers
+nnoremap("<leader>r", ":register<CR>")
+
+-- Show buffers
+nnoremap("<leader>b", ":ls<CR>:b")
+
+-- Disable highlighting
+nnoremap("<F3>", ":nohl<CR>")
+
+-- Run macros easily
+nnoremap("Q", "@q")
+
 
 -- Move lines up/down
 inoremap("<A-j>", "<Esc>:m .+1<CR>==gi")
 inoremap("<A-k>", "<Esc>:m .-2<CR>==gi")
 
-
 -- Keep selection when indenting
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
 
+-- Run macros
+vnoremap("Q", ":norm @q<CR>")
 
 -- Move lines up/down
 xnoremap("<A-j>", ":m '>+1<CR>gv-gv")
