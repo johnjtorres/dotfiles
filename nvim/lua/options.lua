@@ -1,0 +1,23 @@
+local default_options = {
+  backup = false,
+  expandtab = true,
+  fileencoding = "utf-8",
+  guicursor = "",
+  hidden = true,
+  hlsearch = true,
+  incsearch = true,
+  number = true,
+  relativenumber = true,
+  scrolloff = 8,
+  shiftwidth = 2,
+  sidescrolloff = 8,
+  softtabstop = 2,
+  splitbelow = true,
+  splitright = true,
+  tabstop = 2,
+  title = true,
+}  
+
+for k, v in pairs(default_options) do
+  vim.opt[k] = v
+end
