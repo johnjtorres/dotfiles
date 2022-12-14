@@ -25,11 +25,23 @@ nnoremap("<leader>O", "O<Esc>j")
 
 -- Write file
 nnoremap("<leader>,", ":write<CR>")
--- Previous buffer
+
+-- Last buffer
 nnoremap("<leader><leader>", ":bprev<CR>")
+nnoremap("<leader>h", ":bprev<CR>")
+
 -- Quit
-nnoremap("<leader>q", ":quit<CR>")
+nnoremap("<leader>q", ":bdel<CR>")
 nnoremap("<leader>Q", ":qa!<CR>")
+
+-- First character
+nnoremap("<leader>0", "^")
+
+-- Beginning of line
+nnoremap("<S-h>", "0")
+
+-- End of line
+nnoremap("<S-l>", "$")
 
 
 -- Move lines up/down
