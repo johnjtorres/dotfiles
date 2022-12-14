@@ -18,16 +18,29 @@ local xnoremap = bind("x")
 -- Move lines up/down
 nnoremap("<A-j>", ":m .+1<CR>==")
 nnoremap("<A-k>", ":m .-2<CR>==")
+
+-- Insert lines
+nnoremap("<leader>o", "o<Esc>k")
+nnoremap("<leader>O", "O<Esc>j")
+
 -- Write file
 nnoremap("<leader>,", ":write<CR>")
+-- Previous buffer
+nnoremap("<leader><leader>", ":bprev<CR>")
+-- Quit
+nnoremap("<leader>q", ":quit<CR>")
+nnoremap("<leader>Q", ":qa!<CR>")
+
 
 -- Move lines up/down
 inoremap("<A-j>", "<Esc>:m .+1<CR>==gi")
 inoremap("<A-k>", "<Esc>:m .-2<CR>==gi")
 
+
 -- Keep selection when indenting
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
+
 
 -- Move lines up/down
 xnoremap("<A-j>", ":m '>+1<CR>gv-gv")
