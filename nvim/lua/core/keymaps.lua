@@ -1,19 +1,15 @@
 local function bind(mode, outer_opts)
-  outer_opts = outer_opts or { noremap = true, silent = true }
-  return function(lhs, rhs, opts)
-    opts = vim.tbl_extend("force", 
-      outer_opts,
-      opts or {}
-    )
-    vim.keymap.set(mode, lhs, rhs, opts)
-  end
+	outer_opts = outer_opts or { noremap = true, silent = true }
+	return function(lhs, rhs, opts)
+		opts = vim.tbl_extend("force", outer_opts, opts or {})
+		vim.keymap.set(mode, lhs, rhs, opts)
+	end
 end
 
 local nnoremap = bind("n")
 local inoremap = bind("i")
 local vnoremap = bind("v")
 local xnoremap = bind("x")
-
 
 -- Move lines up/down
 nnoremap("<A-j>", ":m .+1<CR>==")
