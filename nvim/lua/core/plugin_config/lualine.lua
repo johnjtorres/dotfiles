@@ -1,9 +1,12 @@
 require("lualine").setup({
+  options = { 
+    theme = "tokyonight" 
+  },
   sections = { 
     lualine_c = {
       "buffers",
     } 
   },
-  disabled_filetypes = { 'packer', 'NVimTree' },
+  disabled_filetypes = { 'NVimTree' },
 })
 
