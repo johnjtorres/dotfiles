@@ -29,6 +29,7 @@ nnoremap("<leader>,", ":write<CR>")
 -- Last buffer
 nnoremap("<leader><leader>", ":bprev<CR>")
 nnoremap("<leader>h", ":bprev<CR>")
+nnoremap("<leader>l", ":bnext<CR>")
 
 -- Quit
 nnoremap("<leader>q", ":bdel<CR>")
