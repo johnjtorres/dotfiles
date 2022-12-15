@@ -42,6 +42,9 @@ return require("packer").startup(function(use)
 	})
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("MunifTanjim/prettier.nvim")
+	use("tpope/vim-commentary")
+	use("tpope/vim-surround")
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end
