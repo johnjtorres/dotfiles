@@ -31,6 +31,10 @@ return require('packer').startup(function(use)
     },
     tag = 'nightly'
   }
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
