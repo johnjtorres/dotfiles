@@ -5,6 +5,7 @@ local default_options = {
   guicursor = '',
   hidden = true,
   hlsearch = true,
+  laststatus = 3,
   incsearch = true,
   number = true,
   relativenumber = true,

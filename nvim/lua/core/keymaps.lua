@@ -32,6 +32,12 @@ nnoremap("<leader>h", ":bprev<CR>")
 nnoremap("<leader>l", ":bnext<CR>")
 nnoremap("<leader>b", ":buffers!<CR>:b")
 
+-- Splits
+nnoremap("<C-h>", ":wincmd h<CR>")
+nnoremap("<C-j>", ":wincmd j<CR>")
+nnoremap("<C-k>", ":wincmd k<CR>")
+nnoremap("<C-l>", ":wincmd l<CR>")
+
 -- Quit
 nnoremap("<leader>q", ":bdel<CR>")
 nnoremap("<leader>Q", ":qa!<CR>")

@@ -7,6 +7,5 @@ require("lualine").setup({
       "buffers",
     } 
   },
-  disabled_filetypes = { 'NVimTree' },
 })
 
