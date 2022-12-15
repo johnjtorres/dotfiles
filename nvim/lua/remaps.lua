@@ -26,10 +26,11 @@ nnoremap("<leader>O", "O<Esc>j")
 -- Write file
 nnoremap("<leader>,", ":write<CR>")
 
--- Last buffer
-nnoremap("<leader><leader>", ":bprev<CR>")
+-- Buffers
+nnoremap("<leader><leader>", "<C-6>")
 nnoremap("<leader>h", ":bprev<CR>")
 nnoremap("<leader>l", ":bnext<CR>")
+nnoremap("<leader>b", ":ls<CR>:b")
 
 -- Quit
 nnoremap("<leader>q", ":bdel<CR>")
@@ -46,9 +47,6 @@ nnoremap("<S-l>", "$")
 
 -- Show registers
 nnoremap("<leader>r", ":register<CR>")
-
--- Show buffers
-nnoremap("<leader>b", ":ls<CR>:b")
 
 -- Disable highlighting
 nnoremap("<F3>", ":nohl<CR>")
