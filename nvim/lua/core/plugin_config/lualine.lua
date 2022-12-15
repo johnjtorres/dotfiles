@@ -4,5 +4,6 @@ require("lualine").setup({
       "buffers",
     } 
   },
+  disabled_filetypes = { 'packer', 'NVimTree' },
 })
 
