@@ -30,7 +30,6 @@ nnoremap("<leader>,", ":write<CR>")
 nnoremap("<leader><leader>", "<C-6>")
 nnoremap("<leader>h", ":bprev<CR>")
 nnoremap("<leader>l", ":bnext<CR>")
-nnoremap("<leader>b", ":buffers!<CR>:b")
 
 -- Splits
 nnoremap("<C-h>", ":wincmd h<CR>")
