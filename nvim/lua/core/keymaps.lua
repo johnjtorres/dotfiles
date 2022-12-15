@@ -50,7 +50,7 @@ nnoremap("<S-l>", "$")
 nnoremap("<leader>r", ":register<CR>")
 
 -- Disable highlighting
-nnoremap("<F3>", ":nohl<CR>")
+nnoremap(",<leader>", ":nohlsearch<CR>")
 
 -- Run macros easily
 nnoremap("Q", "@q")
