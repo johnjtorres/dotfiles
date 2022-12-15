@@ -58,6 +58,9 @@ nnoremap("Q", "@q")
 -- Open nvim-tree
 nnoremap("<C-n>", ":NvimTreeFindFileToggle<CR>")
 
+-- Paste from clipboard
+nnoremap("<leader>p", '"+p`[v`]')
+
 -- Telescope
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
@@ -72,6 +75,9 @@ inoremap("<A-k>", "<Esc>:m .-2<CR>==gi")
 -- Keep selection when indenting
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
+
+-- Copy to clipboard
+vnoremap("<leader>y", '"+y')
 
 -- Run macros
 vnoremap("Q", ":norm @q<CR>")
