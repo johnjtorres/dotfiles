@@ -30,7 +30,7 @@ nnoremap("<leader>,", ":write<CR>")
 nnoremap("<leader><leader>", "<C-6>")
 nnoremap("<leader>h", ":bprev<CR>")
 nnoremap("<leader>l", ":bnext<CR>")
-nnoremap("<leader>b", ":ls<CR>:b")
+nnoremap("<leader>b", ":buffers!<CR>:b")
 
 -- Quit
 nnoremap("<leader>q", ":bdel<CR>")
