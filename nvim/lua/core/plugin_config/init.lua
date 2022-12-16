@@ -1,8 +1,0 @@
-require("core.plugin_config.lualine")
-require("core.plugin_config.tokyonight")
-require("core.plugin_config.nvim-tree")
-require("core.plugin_config.lsp")
-require("core.plugin_config.null-ls")
-require("core.plugin_config.treesitter")
-require("core.plugin_config.telescope-file-browser")
-require("core.plugin_config.dashboard")
