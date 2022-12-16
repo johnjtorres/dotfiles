@@ -53,6 +53,11 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Replace word under cursor
 vim.keymap.set("n", "<leader>s", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>")
+vim.keymap.set("n", "<leader>S", ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gcI<Left><Left><Left><Left>")
+
+-- Replace selection
+vim.keymap.set("v", "<leader>s", '"hy:%s/<C-r>h//gI<Left><Left><Left>')
+vim.keymap.set("v", "<leader>S", '"hy:%s/<C-r>h//gcI<Left><Left><Left><Left>')
 
 -- Remove trailing whitespace
 vim.keymap.set("n", "<leader>tw", ":%s/\\s\\+$//e<CR>")
