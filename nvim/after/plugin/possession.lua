@@ -5,5 +5,5 @@ require("possession").setup({
     on_load = true,
     on_quit = true,
   },
-  plugins = { delete_hidden_buffers = false },
+  plugins = { delete_hidden_buffers = false, delete_buffers = true },
 })

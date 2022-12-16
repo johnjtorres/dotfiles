@@ -5,6 +5,7 @@ vim.keymap.set("n", "<leader>fg", telescope.live_grep, {})
 vim.keymap.set("n", "<leader>fb", telescope.buffers, {})
 vim.keymap.set("n", "<C-p>", telescope.git_files, {})
 vim.keymap.set("n", "<leader>fh", telescope.help_tags, {})
+vim.keymap.set("n", "<leader>fs", ":Telescope possession list<CR>")
 
 -- Save
 vim.keymap.set("n", "<leader>,", vim.cmd.write)
