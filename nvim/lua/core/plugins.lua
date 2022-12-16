@@ -40,10 +40,13 @@ return require("packer").startup(function(use)
 		tag = "0.1.0",
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
+	use("nvim-telescope/telescope-file-browser.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 	use("MunifTanjim/prettier.nvim")
 	use("tpope/vim-commentary")
 	use("tpope/vim-surround")
+	use("lewis6991/impatient.nvim")
+	use("glepnir/dashboard-nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()
