@@ -42,7 +42,7 @@ vim.keymap.set("v", "<leader>d", '"_d')
 -- Unbind Q
 vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<leader>f", function()
-	vim.lsp.buf.format()
+  vim.lsp.buf.format()
 end)
 
 -- Quick fix navigation
@@ -60,3 +60,14 @@ vim.keymap.set("n", "<leader>tw", ":%s/\\s\\+$//e<CR>")
 -- Insert lines
 vim.keymap.set("n", "<leader>o", "o<Esc>k")
 vim.keymap.set("n", "<leader>O", "O<Esc>j")
+
+-- Toggle Diagnostics
+local diagnostics_active = true
+vim.keymap.set("n", "<leader>d", function()
+  diagnostics_active = not diagnostics_active
+  if diagnostics_active then
+    vim.diagnostic.show()
+  else
+    vim.diagnostic.hide()
+  end
+end)
