@@ -48,6 +48,10 @@ return require("packer").startup(function(use)
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
+  use {
+    "jedrzejboczar/possession.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+  }
 
   if packer_bootstrap then
     require("packer").sync()
