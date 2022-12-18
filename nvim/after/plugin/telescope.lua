@@ -1,7 +1,7 @@
 local telescope = require("telescope")
 telescope.load_extension("possession")
-telescope.setup {
+telescope.setup({
   defaults = {
-    initial_mode = "normal"
+    initial_mode = "normal",
   },
-}
+})
