@@ -47,7 +47,6 @@ local on_attach = function(_, bufnr)
 			vim.lsp.buf.formatting()
 		end
 	end, { desc = "Format current buffer with LSP" })
-	nmap("<leader>f", ":Format<CR>", "[F]ormat")
 end
 
 -- nvim-cmp supports additional completion capabilities
