@@ -23,8 +23,8 @@ vim.keymap.set("n", "<leader>o", "o<Esc>k")
 vim.keymap.set("n", "<leader>O", "O<Esc>j")
 
 -- Go to end/beginning of line
-vim.keymap.set("n", "H", "0")
-vim.keymap.set("n", "L", "$")
+vim.keymap.set("n", "<leader>h", "0")
+vim.keymap.set("n", "<leader>l", "$")
 
 -- Go to first character of line
 vim.keymap.set("n", "<leader>0", "^")
@@ -70,8 +70,8 @@ vim.keymap.set("v", "<leader>S", '"hy:%s/<C-r>h//gI<Left><Left><Left>')
 vim.keymap.set("n", "<leader>tw", ":%s/\\s\\+$//e<CR>")
 
 -- Buffers
-vim.keymap.set("n", "<leader>h", ":bprev<CR>", { silent = true })
-vim.keymap.set("n", "<leader>l", ":bnext<CR>", { silent = true })
+vim.keymap.set("n", "H", ":bprev<CR>", { silent = true })
+vim.keymap.set("n", "L", ":bnext<CR>", { silent = true })
 vim.keymap.set("n", "<leader>;", "<C-6>", { silent = true })
 
 -- Splits
@@ -95,6 +95,7 @@ vim.keymap.set("n", "<leader>fw", require("telescope.builtin").grep_string, { de
 vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
 vim.keymap.set("n", "<leader>fd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
 vim.keymap.set("n", "<leader>fk", require("telescope.builtin").keymaps, { desc = "[S]earch [K]eymaps" })
+vim.keymap.set("n", "<leader>fp", ":Telescope possession list<CR>", { desc = "[S]earch [P]rojects", silent = true })
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
