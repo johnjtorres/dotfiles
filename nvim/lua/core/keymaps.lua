@@ -1,3 +1,4 @@
+-- Set leader key
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -51,8 +52,7 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- Copy text to system clipboard
-vim.keymap.set("n", "<leader>y", '"+y')
-vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y')
 vim.keymap.set("n", "<leader>Y", '"+Y')
 
 -- Delete text and send to _ register
@@ -72,7 +72,7 @@ vim.keymap.set("n", "<leader>tw", ":%s/\\s\\+$//e<CR>")
 -- Buffers
 vim.keymap.set("n", "<leader>h", ":bprev<CR>", { silent = true })
 vim.keymap.set("n", "<leader>l", ":bnext<CR>", { silent = true })
-vim.keymap.set("n", "<leader>q", ":bdel<CR>", { silent = true })
+vim.keymap.set("n", "<leader>;", "<C-6>", { silent = true })
 
 -- Splits
 vim.keymap.set("n", "<C-h>", "<C-w>h")
@@ -89,11 +89,12 @@ vim.keymap.set("n", "<leader>/", function()
 		previewer = false,
 	}))
 end, { desc = "[/] Fuzzily search in current buffer]" })
-vim.keymap.set("n", "<leader>sf", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
-vim.keymap.set("n", "<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
-vim.keymap.set("n", "<leader>sw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
-vim.keymap.set("n", "<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
-vim.keymap.set("n", "<leader>sd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
+vim.keymap.set("n", "<leader>ff", require("telescope.builtin").find_files, { desc = "[S]earch [F]iles" })
+vim.keymap.set("n", "<leader>fh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
+vim.keymap.set("n", "<leader>fw", require("telescope.builtin").grep_string, { desc = "[S]earch current [W]ord" })
+vim.keymap.set("n", "<leader>fg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
+vim.keymap.set("n", "<leader>fd", require("telescope.builtin").diagnostics, { desc = "[S]earch [D]iagnostics" })
+vim.keymap.set("n", "<leader>fk", require("telescope.builtin").keymaps, { desc = "[S]earch [K]eymaps" })
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
