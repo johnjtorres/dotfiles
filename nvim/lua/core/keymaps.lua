@@ -72,13 +72,17 @@ vim.keymap.set("n", "<leader>tw", ":%s/\\s\\+$//e<CR>")
 -- Buffers
 vim.keymap.set("n", "H", ":bprev<CR>", { silent = true })
 vim.keymap.set("n", "L", ":bnext<CR>", { silent = true })
-vim.keymap.set("n", "<leader>;", "<C-6>", { silent = true })
+vim.keymap.set("n", "<BS>", "<C-6>", { silent = true })
 
 -- Splits
 vim.keymap.set("n", "<C-h>", "<C-w>h")
 vim.keymap.set("n", "<C-j>", "<C-w>j")
 vim.keymap.set("n", "<C-k>", "<C-w>k")
 vim.keymap.set("n", "<C-l>", "<C-w>l")
+
+-- Tabs
+vim.keymap.set("n", "<A-h>", ":tabprev<CR>", { silent = true })
+vim.keymap.set("n", "<A-l>", ":tabnext<CR>", { silent = true })
 
 -- Telescope keymaps
 vim.keymap.set("n", "<leader>?", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
