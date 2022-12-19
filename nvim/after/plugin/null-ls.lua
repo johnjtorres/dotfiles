@@ -5,6 +5,7 @@ local formatting = null_ls.builtins.formatting
 local sources = {
 	formatting.stylua,
 	formatting.prettier,
+	formatting.black,
 }
 
 local async_formatting = function(bufnr)
