@@ -100,5 +100,8 @@ vim.keymap.set("n", "<leader>fp", ":Telescope possession list<CR>", { desc = "[S
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "]d", vim.diagnostic.goto_next)
-vim.keymap.set("n", "<leader>e", vim.diagnostic.open_float)
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist)
+vim.keymap.set("n", "<leader>df", vim.diagnostic.open_float)
+vim.keymap.set("n", "<leader>dl", vim.diagnostic.setloclist)
+
+-- Nvim-tree keymaps
+vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { silent = true })
