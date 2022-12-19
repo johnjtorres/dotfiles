@@ -46,3 +46,6 @@ vim.o.sidescrolloff = 8
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = "menuone,noselect"
+
+-- One status line
+vim.o.laststatus = 3
