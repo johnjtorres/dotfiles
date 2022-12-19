@@ -65,9 +65,15 @@ require("packer").startup(function(use)
 	-- Vim surround
 	use({
 		"kylechui/nvim-surround",
-		tag = "*",
 		config = function()
 			require("nvim-surround").setup()
+		end,
+	})
+
+	use({
+		"windwp/nvim-autopairs",
+		config = function()
+			require("nvim-autopairs").setup({})
 		end,
 	})
 
