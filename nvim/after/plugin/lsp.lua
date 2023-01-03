@@ -1,7 +1,7 @@
 require("mason").setup()
 
 -- Enable the following language servers
-local servers = { "pyright", "cssls", "html", "sumneko_lua", "denols" }
+local servers = { "pyright", "cssls", "html", "sumneko_lua", "denols", "emmet_ls" }
 
 -- Ensure the servers above are installed
 require("mason-lspconfig").setup({
