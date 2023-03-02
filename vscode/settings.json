@@ -1,5 +1,5 @@
 {
-  "black-formatter.args": ["--line-length 79"],
+  "black-formatter.args": ["--line-length=79"],
   "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
@@ -8,17 +8,12 @@
   "editor.formatOnSave": true,
   "editor.lineHeight": 30,
   "editor.lineNumbers": "relative",
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
+  "mypy.runUsingActiveInterpreter": true,
   "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
-  "python.linting.mypyEnabled": true,
-  "python.linting.mypyArgs": [
-    "--follow-imports=silent",
-    "--ignore-missing-imports",
-    "--show-column-numbers",
-    "--no-pretty",
-    "--strict"
-  ],
+  "python.linting.pydocstyleArgs": ["--convention=google"],
+  "python.linting.pydocstyleEnabled": true,
   "python.linting.pylintEnabled": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
