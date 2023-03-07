@@ -1,35 +1,37 @@
 {
-  "black-formatter.args": ["--line-length=79"],
+  // Editor
   "editor.cursorSurroundingLines": 8,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.fontSize": 20,
+  "editor.fontSize": 16,
   "editor.formatOnSave": true,
-  "editor.lineHeight": 30,
+  "editor.lineHeight": 24,
   "editor.lineNumbers": "relative",
   "files.autoSave": "afterDelay",
-  "mypy.runUsingActiveInterpreter": true,
-  "python.languageServer": "Pylance",
-  "python.linting.flake8Enabled": true,
-  "python.linting.pydocstyleArgs": ["--convention=google"],
-  "python.linting.pydocstyleEnabled": true,
-  "python.linting.pylintEnabled": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
-  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.fontSize": 16,
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
+
+  // Python
+  "black-formatter.args": ["--line-length=79"],
+  "black-formatter.importStrategy": "fromEnvironment",
+  "isort.args": ["--profile", "black"],
+  "pylint.importStrategy": "fromEnvironment",
+  "python.languageServer": "Pylance",
+  "python.linting.pylintEnabled": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.rulers": [79, 72],
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     }
   },
-  "isort.args": ["--profile", "black"],
+
+  // Vim
   "vim.sneak": true,
   "vim.highlightedyank.enable": true,
   "vim.leader": "<space>",
@@ -37,18 +39,6 @@
     {
       "before": ["<leader>", ","],
       "commands": ["workbench.action.files.save"]
-    },
-    {
-      "before": [">"],
-      "commands": ["editor.action.indentLines"]
-    },
-    {
-      "before": ["<"],
-      "commands": ["editor.action.outdentLines"]
-    },
-    {
-      "before": ["<leader>", "p"],
-      "commands": ["workbench.action.showCommands"]
     },
     {
       "before": ["H"],
@@ -73,14 +63,6 @@
     {
       "before": ["<leader>", "O"],
       "commands": ["editor.action.insertLineBefore", "cursorDown"]
-    },
-    {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.action.toggleSidebarVisibility"]
-    },
-    {
-      "before": ["<leader>", "f", "f"],
-      "commands": ["editor.action.quickOpenView"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
