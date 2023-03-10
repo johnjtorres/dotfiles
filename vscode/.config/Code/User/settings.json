@@ -1,9 +1,11 @@
 {
   // Editor
   "editor.cursorSurroundingLines": 8,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
+  "editor.formatOnSave": true,
   "editor.lineHeight": 24,
   "editor.lineNumbers": "relative",
   "files.autoSave": "afterDelay",
@@ -20,9 +22,6 @@
   "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
 
   // Python
   "black-formatter.importStrategy": "fromEnvironment",
@@ -34,7 +33,6 @@
   "python.linting.lintOnSave": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnSave": true,
     "editor.rulers": [72, 79],
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
