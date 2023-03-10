@@ -1,14 +1,18 @@
 {
   // Editor
   "editor.cursorSurroundingLines": 8,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 16,
-  "editor.formatOnSave": true,
   "editor.lineHeight": 24,
   "editor.lineNumbers": "relative",
   "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/.mypy_cache": true,
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/*.egg-info": true
+  },
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 16,
@@ -16,16 +20,22 @@
   "workbench.colorTheme": "Nord",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 
   // Python
-  "black-formatter.args": ["--line-length=79"],
   "black-formatter.importStrategy": "fromEnvironment",
-  "isort.args": ["--profile", "black"],
-  "pylint.importStrategy": "fromEnvironment",
+  "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
+  "flake8.importStrategy": "fromEnvironment",
+  "isort.args": ["--profile=black"],
+  "isort.importStrategy": "fromEnvironment",
   "python.languageServer": "Pylance",
-  "python.linting.pylintEnabled": true,
+  "python.linting.lintOnSave": true,
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.rulers": [72, 79],
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     }
