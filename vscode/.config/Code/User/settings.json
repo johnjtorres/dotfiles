@@ -8,18 +8,26 @@
   "editor.formatOnSave": true,
   "editor.lineHeight": 24,
   "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "extensions.ignoreRecommendations": true,
   "files.autoSave": "afterDelay",
   "files.exclude": {
-    "**/.mypy_cache": true,
-    "**/__pycache__": true,
-    "**/.pytest_cache": true,
-    "**/*.egg-info": true
+    "**/.mypy_cache/": true,
+    "**/__pycache__/": true,
+    "**/.pytest_cache/": true,
+    "**/*.egg-info/": true,
+    "**/build/": true,
+    "**/.tox/": true,
+    "**/.coverage": true,
+    "**/.python-version": true
   },
+  "git.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.fontSize": 16,
   "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Nord",
+  "workbench.editor.enablePreview": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.settings.editor": "json",
 
@@ -32,6 +40,7 @@
   "python.languageServer": "Pylance",
   "python.linting.lintOnSave": true,
   "[python]": {
+    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.rulers": [72, 79],
     "editor.codeActionsOnSave": {
