@@ -11,16 +11,6 @@
   "editor.minimap.enabled": false,
   "extensions.ignoreRecommendations": true,
   "files.autoSave": "afterDelay",
-  "files.exclude": {
-    "**/.mypy_cache/": true,
-    "**/__pycache__/": true,
-    "**/.pytest_cache/": true,
-    "**/*.egg-info/": true,
-    "**/build/": true,
-    "**/.tox/": true,
-    "**/.coverage": true,
-    "**/.python-version": true
-  },
   "git.enabled": false,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
@@ -32,17 +22,10 @@
   "workbench.settings.editor": "json",
 
   // Python
-  "black-formatter.importStrategy": "fromEnvironment",
-  "flake8.args": ["--max-line-length=88", "--extend-ignore=E203"],
-  "flake8.importStrategy": "fromEnvironment",
-  "isort.args": ["--profile=black"],
-  "isort.importStrategy": "fromEnvironment",
   "python.languageServer": "Pylance",
   "python.linting.lintOnSave": true,
   "[python]": {
-    "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.rulers": [72, 79],
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
     }
