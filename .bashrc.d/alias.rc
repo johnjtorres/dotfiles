@@ -1,0 +1,8 @@
+alias vim=/usr/bin/vimx
+alias vimrc="vim $HOME/.vimrc"
+alias ls="ls -hN --color=auto --group-directories-first"
+alias ll="ls -l"
+alias la="ls -lA"
+alias grep="grep --color=auto"
+alias hackertype="docker run --rm -it bcbcarl/hollywood"
+alias laura="/usr/bin/ssh laura"
