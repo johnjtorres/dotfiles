@@ -1,0 +1,14 @@
+source ~/.local/share/omarchy/default/bash/rc
+
+export EDITOR='/usr/bin/nvim'
+export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
+export STOW_DIR="$HOME/Git/johnjtorres/dotfiles"
+
+alias bashrc="source $HOME/.bashrc"
+alias ebashrc="$EDITOR ~/.bashrc"
+alias la='ls -la'
+alias ll='ls -l'
+alias mkdir='mkdir -p'
+alias stow="stow --dir=$STOW_DIR --target=$HOME"
+alias v="$EDITOR"
+alias vim="$EDITOR"
