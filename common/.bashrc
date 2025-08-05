@@ -11,3 +11,5 @@ alias ll='ls -l'
 alias stow="stow --dir=$STOW_DIR --target=$HOME"
 alias v="$EDITOR"
 alias vim="$EDITOR"
+alias ff='fzf --multi --preview '\''bat --style=numbers --color=always {}'\'''
+alias vf='vim $(ff)'
