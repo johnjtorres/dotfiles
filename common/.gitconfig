@@ -1,0 +1,17 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[user]
+	name = John Torres
+	email = john@johntorres.me
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFdNjulHiarNH3bSjPZsClYUUTeP/5Hf2n8lwPfDZ1+o
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
