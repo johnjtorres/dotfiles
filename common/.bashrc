@@ -8,7 +8,6 @@ alias bashrc="source $HOME/.bashrc"
 alias ebashrc="$EDITOR ~/.bashrc"
 alias la='ls -la'
 alias ll='ls -l'
-alias mkdir='mkdir -p'
 alias stow="stow --dir=$STOW_DIR --target=$HOME"
 alias v="$EDITOR"
 alias vim="$EDITOR"
