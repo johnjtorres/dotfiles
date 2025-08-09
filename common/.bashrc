@@ -11,6 +11,7 @@ alias ll='ls -l'
 alias stow="stow --dir=$STOW_DIR --target=$HOME"
 alias v="$EDITOR"
 alias vim="$EDITOR"
+alias ghrv='gh repo view --web'
 
 vf() {
   local -a files
